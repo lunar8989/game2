@@ -1,0 +1,566 @@
+* { margin:0; padding:0; }
+html, body { width:100%; height:100%; }
+html { overflow:  hidden; }
+
+#wrap{
+    position:relative; width: 1550px; height: 1024px;
+    background: url(../img/ground.jpg);
+}
+
+#canvas{
+    position:absolute; 
+    top:0; 
+    left:0; 
+    z-index:0;
+    margin: auto;
+}
+
+#gameOver{
+    display: none;
+}
+
+#intro{
+    position: absolute;
+}
+
+.grayImg{
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray; /* IE 6-9 */    
+    }
+
+@media screen and (min-width: 1440px){ 
+    
+    #btn{
+    width: 100%; height: 1000px;
+    display: block;
+    margin: auto;
+    background: url(../img/ground.jpg);
+    text-align: center;
+    align-content: center;
+    }   
+    /* #pause{
+        width: 1300px;
+        height: 1000px;
+        display: none;
+        margin: auto;
+        background: url(../img/ground.jpg);
+        text-align: center;
+        align-content: center;
+    } */
+
+    
+   
+    .menu{
+        position:absolute;
+        left: 35%;
+        width: 400px;
+        height: 700px;
+        background-color: #FFE14D;
+        text-align: center;
+        align-content: center;
+        margin: auto;
+        border: 1px solid black;
+        border-radius: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .nameGame{
+        width: 100%;
+        height: 70px;
+        background-color: #F66209;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        font-size: 22px;
+        
+    }
+   
+    .menuBody{
+        width: 100%;
+        height: 65%;
+        margin-top: 10px;
+        background-color: #F69D77;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        padding-top: 15px; 
+        font-size: 21px;
+    }
+
+     
+.menuBody label{
+    font-size: 20px;
+}
+
+.menuBody input[type=button]{
+    width: 20%;
+    height: 10%;
+    font-size: 18px;
+}
+
+.menuBody input[type=text]{
+    width: 200px;
+    height: 40px;
+}
+
+.btnmenu{
+    width: 200px;
+    height: 70px;
+    font-size: 20px;
+    background-color: #F3B158;
+    color: black;
+    margin-top: 15%;
+}
+
+#pers input{
+    width: 150px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+}
+@media screen and (min-width: 1280px) and (max-width: 1440px){ 
+    
+
+    #btn{
+        width: 100%; height: 800px;
+        display: block;
+        margin: auto;
+        background: url(../img/ground.jpg);
+        text-align: center;
+        align-content: center;
+    }   
+    
+    /* #pause{
+        width: 100%;
+        height: 800px;
+        display: none;
+        margin: auto;
+        background: url(../img/ground.jpg);
+        text-align: center;
+        align-content: center;
+    } */
+    .menu{
+        width: 400px;
+        height: 600px;
+        background-color: #FFE14D;
+        text-align: center;
+        align-content: center;
+        margin: auto;
+        border: 1px solid black;
+        border-radius: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .nameGame{
+        width: 100%;
+        height: 70px;
+        background-color: #F66209;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        font-size: 22px;
+        
+    }
+
+    .menuBody{
+        width: 100%;
+        height: 75%;
+        margin-top: 10px;
+        background-color: #F69D77;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        padding-top: 15px; 
+    }
+    
+    .menuBody label{
+        font-size: 20px;
+    }
+    
+    .menuBody input[type=button]{
+        width: 20%;
+        height: 10%;
+        font-size: 18px;
+    }
+    
+    .menuBody input[type=text]{
+        width: 200px;
+        height: 40px;
+    }
+    
+    .btnmenu{
+        width: 200px;
+        height: 70px;
+        font-size: 20px;
+        background-color: #F3B158;
+        color: black;
+        margin-top: 15%;
+    }
+    
+    #pers input{
+        width: 150px;
+        border-radius: 10px;
+        margin-right: 20px;
+    }
+
+}
+@media screen and (min-width: 1024px) and (max-width: 1280px){ 
+    
+    
+    #btn{
+        width: 100%; height: 800px;
+        display: block;
+        margin: auto;
+        background: url(../img/ground.jpg);
+        text-align: center;
+        align-content: center;
+    }   
+    
+    /* #pause{
+        width: 100%;
+        height: 800px;
+        display: none;
+        margin: auto;
+        background: url(../img/ground.jpg);
+        text-align: center;
+        align-content: center;
+    } */
+    .menu{
+        width: 350px;
+        height: 620px;
+        background-color: #FFE14D;
+        text-align: center;
+        align-content: center;
+        margin: auto;
+        border: 1px solid black;
+        border-radius: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .nameGame{
+        width: 100%;
+        height: 70px;
+        background-color: #F66209;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        font-size: 22px;
+        
+    }
+
+    .menuBody{
+        width: 100%;
+        height: 75%;
+        margin-top: 10px;
+        background-color: #F69D77;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        padding-top: 15px; 
+    }
+    
+    .menuBody label{
+        font-size: 22px;
+    }
+    
+    .menuBody input[type=button]{
+        width: 20%;
+        height: 10%;
+        font-size: 18px;
+    }
+    
+    .menuBody input[type=text]{
+        width: 200px;
+        height: 40px;
+    }
+    
+    .btnmenu{
+        width: 200px;
+        height: 70px;
+        font-size: 20px;
+        background-color: #F3B158;
+        color: black;
+        margin-top: 15%;
+    }
+    
+    #pers input{
+        width: 150px;
+        border-radius: 10px;
+        margin-right: 20px;
+    }
+
+}
+@media screen and (min-width: 600px) and (max-width: 1024px){ 
+    
+
+    #btn{
+        width: 100%; height: 800px;
+        display: block;
+        margin: auto;
+        background: url(../img/ground.jpg);
+        text-align: center;
+        align-content: center;
+    }   
+    
+    /* #pause{
+        width: 100%;
+        height: 500px;
+        display: none;
+        margin: auto;
+        background: url(../img/ground.jpg);
+        text-align: center;
+        align-content: center;
+    } */
+    .menu{
+        width: 350px;
+        height: 500px;
+        background-color: #FFE14D;
+        text-align: center;
+        align-content: center;
+        margin: auto;
+        border: 1px solid black;
+        border-radius: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .nameGame{
+        width: 100%;
+        height: 70px;
+        background-color: #F66209;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        font-size: 22px;
+        
+    }
+
+    .menuBody{
+        width: 100%;
+        height: 75%;
+        margin-top: 10px;
+        background-color: #F69D77;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        padding-top: 15px; 
+    }
+    
+    .menuBody label{
+        font-size: 22px;
+    }
+    
+    .menuBody input[type=button]{
+        width: 20%;
+        height: 10%;
+        font-size: 18px;
+        
+    }
+    
+    .menuBody input[type=text]{
+        width: 200px;
+        height: 40px;
+        margin-bottom: 20px;
+    }
+    
+    .btnmenu{
+        width: 200px;
+        height: 70px;
+        font-size: 20px;
+        background-color: #F3B158;
+        color: black;
+        margin-top: 15%;
+    }
+    
+    #pers input{
+        
+        width: 150px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    #leoimg, #tigimg {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px){ 
+    
+
+    #btn{
+        width: 100%; height: 500px;
+        display: block;
+        margin: auto;
+        background: url(../img/ground.jpg);
+        text-align: center;
+        align-content: center;
+    }   
+    
+    /* #pause{
+        width: 100%;
+        height: 300px;
+        display: none;
+        margin: auto;
+        background: url(../img/ground.jpg);
+        text-align: center;
+        align-content: center;
+    } */
+    .menu{
+        width: 250px;
+        height: 300px;
+        background-color: #FFE14D;
+        text-align: center;
+        align-content: center;
+        margin: auto;
+        border: 1px solid black;
+        border-radius: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .nameGame{
+        width: 100%;
+        height: 70px;
+        background-color: #F66209;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        font-size: 22px;
+        
+    }
+
+    .menuBody{
+        width: 100%;
+        height: 65%;
+        margin-top: 10px;
+        background-color: #F69D77;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        padding-top: 15px; 
+    }
+    
+    .menuBody label{
+        font-size: 22px;
+    }
+    
+    .menuBody input[type=button]{
+        width: 20%;
+        height: 10%;
+        font-size: 18px;
+        
+    }
+    
+    .menuBody input[type=text]{
+        width: 200px;
+        height: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .btnmenu{
+        width: 200px;
+        height: 40px;
+        font-size: 18px;
+        background-color: #F3B158;
+        color: black;
+        margin-top: 3%;
+    }
+    
+    #pers input{
+        
+        width: 150px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    #leoimg, #tigimg {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 480px) and (max-width: 600px){ 
+    
+
+    #btn{
+        width: 100%; height: 500px;
+        display: block;
+        margin: auto;
+        background: url(../img/ground.jpg);
+        text-align: center;
+        align-content: center;
+    }   
+    
+    /* #pause{
+        width: 100%;
+        height: 300px;
+        display: none;
+        margin: auto;
+        background: url(../img/ground.jpg);
+        text-align: center;
+        align-content: center;
+    } */
+    .menu{
+        width: 250px;
+        height: 300px;
+        background-color: #FFE14D;
+        text-align: center;
+        align-content: center;
+        margin: auto;
+        border: 1px solid black;
+        border-radius: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .nameGame{
+        width: 100%;
+        height: 70px;
+        background-color: #F66209;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        font-size: 22px;
+        
+    }
+
+    .menuBody{
+        width: 100%;
+        height: 65%;
+        margin-top: 10px;
+        background-color: #F69D77;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        padding-top: 15px; 
+    }
+    
+    .menuBody label{
+        font-size: 22px;
+    }
+    
+    .menuBody input[type=button]{
+        width: 20%;
+        height: 10%;
+        font-size: 18px;
+        
+    }
+    
+    .menuBody input[type=text]{
+        width: 200px;
+        height: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .btnmenu{
+        width: 200px;
+        height: 40px;
+        font-size: 18px;
+        background-color: #F3B158;
+        color: black;
+        margin-top: 3%;
+    }
+    
+    #pers input{
+        
+        width: 150px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    #leoimg, #tigimg {
+        display: none;
+    }
+
+}

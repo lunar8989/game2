@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- style -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- title -->
+    <title>Лео и Тиг</title>
+    
+</head>
+<body> 
+<div id="wrap">
+
+    <canvas id="canvas" width="1550" height="1024"></canvas>
+
+    <div id="pause" class="menu">
+        <div class="nameGame">
+            <h1>Пауза</h1>
+        </div>
+
+        <div class="menuBody">
+            
+            <button class="btnmenu" id="resume">Продолжить</button>
+            <button class="btnmenu" id="close">Выйти</button>
+
+        </div>       
+        
+    </div>
+    
+    <div id="gameOver" class="menu">
+        <div class="nameGame">
+            <h1>Вы проиграли</h1>
+        </div>
+
+        <div class="table">
+            
+        </div>
+    </div>
+
+    <div id="menu" class="menu">
+        <div class="nameGame">
+            <h1>Лео и Тиг</h1>
+        </div>
+    
+    
+        <div class="menuBody">
+            <label for="username"><strong>Введите ваше имя:</strong></label>
+            <input type="text" name="username" id="username">
+            
+        
+            <div id="pers">
+                <div class="leo">
+                    <input type="button" id="leo" value="Лео">
+                    <img class="grayImg" id="leoimg" src="img/leo.png" alt="">
+                </div>
+                
+                <div class="tig">
+                    <input type="button" id="tig" value="Тиг">
+                    <img class="grayImg" id="tigimg" src="img/tig.png" alt="">
+                </div>
+            </div>
+
+            <button class="btnmenu" id="btnStart">Начать</button>
+        </div>               
+        
+        <div>
+            <p>Игра заключается в том, чтобы вы передвигались на стрелки или на клавиши WASD,</br>
+                собирали звезды для восполнения здоровья, которое у вас расходуется 1Hp/с.</br>
+                Так же вы должны не попадаться лисам, иначе при контакте у вас отнимется 30Hp.</br>
+                Вам нужно дойти до конца карты не погибнув.
+            </p>
+        </div>
+    </div>
+    
+    <video id="intro"  width="1550" controls height="1024" autoplay = "autoplay">
+            <source src="video/intro.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+    </video>
+    
+    
+</div>
+    <!-- scripts -->
+    <script src="js/main.js"></script>
+    <!-- <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>   -->
+    
+     
+</body>
+</html>
