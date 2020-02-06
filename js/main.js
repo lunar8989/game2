@@ -172,8 +172,6 @@ function game(){
         }
         render();
         requestAnimFrame(game);  
-    
-    
 }
 document.getElementById("intro").style.display = "none";
 
@@ -197,7 +195,6 @@ document.getElementById('intro').addEventListener('ended',myHandler,false);
 function myHandler(e) {
     document.getElementById("intro").style.display = "none";
     game();
-
 }
 
 
@@ -437,7 +434,7 @@ function update(){
 
     if(counter % 60 == 0){
         if(pers.hp == 0){
-            alert("Вы проирали, начните игру заново.");
+            alert("Вы проиграли, начните игру заново.");
             location.reload();
         }
 
